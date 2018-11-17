@@ -14,6 +14,5 @@ fun todoTask1(collection: Collection<Int>): Nothing = TODO(
 
 
 fun task1(collection: Collection<Int>): String {
-    val sb = StringBuffer()
-    return collection.joinTo(sb, ", ", "{", "}").toString()
+    return collection.joinTo(StringBuffer(), ", ", "{", "}").toString()
 }
